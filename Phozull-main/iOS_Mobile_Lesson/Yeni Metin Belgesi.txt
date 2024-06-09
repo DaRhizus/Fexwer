@@ -1,0 +1,131 @@
+Profil güncelleme özelliği eklemek için aşağıdaki adımları takip edebilirsin. Bu adımlar, proje dosya yapısına göre düzenlenmiştir:
+
+1. Model Dosyasını Güncelle
+Öncelikle, profil bilgilerini temsil edecek bir model oluşturman veya mevcut kullanıcı modelini güncellemen gerekir. Model dosyaları genellikle Models klasöründe bulunur.
+
+Adım:
+Models klasörüne git ve kullanıcı modelini (User.swift veya benzeri) aç.
+Kullanıcının profil bilgilerini (örneğin, profil fotoğrafı URL'si, biyografi, vb.) içerecek şekilde modelini güncelle.
+swift
+Kodu kopyala
+class User {
+    var id: String
+    var username: String
+    var profileImageUrl: String? // Profil fotoğrafı URL'si
+    var bio: String? // Biyografi
+
+    init(id: String, username: String, profileImageUrl: String? = nil, bio: String? = nil) {
+        self.id = id
+        self.username = username
+        self.profileImageUrl = profileImageUrl
+        self.bio = bio
+    }
+}
+2. ViewModel Dosyasını Güncelle
+Veri işleme ve iş mantığı genellikle ViewModels klasöründe bulunur. Profil güncelleme işlemleri için gerekli iş mantığını buraya ekle.
+
+Adım:
+ViewModels klasörüne git ve ilgili ViewModel dosyasını aç (UserViewModel.swift veya benzeri).
+Profil güncelleme işlemi için bir fonksiyon ekle.
+swift
+Kodu kopyala
+class UserViewModel {
+    var user: User
+
+    init(user: User) {
+        self.user = user
+    }
+
+    func updateProfile(profileImageUrl: String?, bio: String?) {
+        // Güncelleme işlemleri burada yapılacak.
+        self.user.profileImageUrl = profileImageUrl
+        self.user.bio = bio
+
+        // Sunucuya güncellemeleri gönder (API çağrısı vb.).
+        // Örnek API çağrısı:
+        // ApiService.updateUserProfile(user: self.user) { response in
+        //     // İşlem sonuçları burada ele alınacak.
+        // }
+    }
+}
+3. Controller Dosyasını Güncelle
+Kullanıcı arayüzündeki etkileşimler ve güncelleme işlemleri Controllers klasöründe bulunur.
+
+Adım:
+Controllers klasörüne git ve kullanıcı profilini yöneten controller dosyasını aç (ProfileViewController.swift veya benzeri).
+Profil güncelleme işlemleri için kullanıcı arayüzü elemanları ve ilgili fonksiyonları ekle.
+swift
+Kodu kopyala
+class ProfileViewController: UIViewController {
+    var userViewModel: UserViewModel!
+
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var bioTextView: UITextView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Mevcut profil bilgilerini yükle.
+        profileImageView.image = UIImage(named: userViewModel.user.profileImageUrl ?? "")
+        bioTextView.text = userViewModel.user.bio
+    }
+
+    @IBAction func saveButtonTapped(_ sender: UIButton) {
+        // Kullanıcıdan yeni profil bilgilerini al.
+        let newProfileImageUrl = "new_image_url_here" // Bu değeri seçici ile al.
+        let newBio = bioTextView.text
+
+        // ViewModel üzerinden profil güncellemesini başlat.
+        userViewModel.updateProfile(profileImageUrl: newProfileImageUrl, bio: newBio)
+    }
+}
+4. Views Dosyasını Güncelle
+Kullanıcı arayüzü bileşenleri genellikle Views klasöründe bulunur.
+
+Adım:
+Views klasörüne git ve profil düzenleme arayüzünü düzenle (ProfileView.xib veya ProfileView.storyboard).
+swift
+Kodu kopyala
+<!-- Örnek olarak, storyboard veya xib dosyasında profil fotoğrafı ve biyografi alanları oluşturulacak. -->
+
+<!-- Profil resmini seçmek için bir UIButton ve biyografi için UITextView ekle. -->
+<UIImageView id="profileImageView" />
+<UITextView id="bioTextView" />
+<UIButton id="saveButton" title="Save" action="saveButtonTapped:" />
+5. Destekleyici Dosyalar
+Bazı destekleyici dosyalar ve eklentiler Support veya Extensions klasöründe olabilir.
+
+Adım:
+Profil fotoğrafı yüklemek için bir resim seçici veya kamera erişimi gibi ek özellikler gerekiyorsa bu dosyalara eklemeler yap.
+swift
+Kodu kopyala
+// Örneğin, UIImagePickerController kullanarak resim seçici ekleyebilirsin.
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    @IBAction func changeProfileImageTapped(_ sender: UIButton) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
+        self.present(imagePickerController, animated: true, completion: nil)
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let selectedImage = info[.originalImage] as? UIImage {
+            profileImageView.image = selectedImage
+            // Seçilen resmi kaydetme işlemleri burada yapılacak.
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+}
+Özet
+Model: Kullanıcı modelini profil bilgilerini içerecek şekilde güncelle.
+ViewModel: Profil güncelleme işlemleri için fonksiyon ekle.
+Controller: Kullanıcı arayüzünde profil güncelleme işlemlerini yönet.
+Views: Profil düzenleme arayüzünü oluştur.
+Destek: Gerekirse resim seçici veya kamera erişimi gibi ek özellikler ekle.
+Bu adımları takip ederek profil güncelleme özelliğini projenize ekleyebilirsiniz.
+
+
+
+
+
+
+
