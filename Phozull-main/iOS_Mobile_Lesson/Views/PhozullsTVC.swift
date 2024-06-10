@@ -1,9 +1,4 @@
-//
-//  PhozullsVC.swift
-//  iOS_Mobile_Lesson
-//
-//  Created by Macbook Air on 28.04.2023.
-//
+
 
 import UIKit
 import FirebaseFirestore

@@ -1,9 +1,4 @@
-//
-//  SharePhozullExt.swift
-//  iOS_Mobile_Lesson
-//
-//  Created by Macbook Air on 1.05.2023.
-//
+
 
 import Foundation
 import UIKit
@@ -83,7 +78,7 @@ extension SharePhozullVC : UIImagePickerControllerDelegate , UINavigationControl
                 if errString != nil {
                     self.presentAlert(title: "HATA OLUŞTU", message: errString!)
                 }else {
-                    self.presentAlert(title: "BAŞARILI", message: "Phozull başarıyla eklendi!")
+                    self.presentAlert(title: "BAŞARILI", message: "Fotoğraf başarıyla eklendi!")
                     self.tabBarController?.selectedIndex = 0
 
                 }

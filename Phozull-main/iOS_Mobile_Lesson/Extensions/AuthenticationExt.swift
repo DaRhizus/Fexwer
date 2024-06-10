@@ -1,9 +1,4 @@
-//
-//  AuthenticationExtension.swift
-//  iOS_Mobile_Lesson
-//
-//  Created by Macbook Air on 27.04.2023.
-//
+
 
 import Foundation
 import UIKit

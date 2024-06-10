@@ -1,9 +1,3 @@
-//
-//  CommentsVM.swift
-//  iOS_Mobile_Lesson
-//
-//  Created by Macbook Air on 4.05.2023.
-//
 
 import Foundation
 import FirebaseFirestore

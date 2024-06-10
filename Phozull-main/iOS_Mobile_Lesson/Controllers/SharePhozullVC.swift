@@ -1,9 +1,4 @@
-//
-//  SharePhozullVC.swift
-//  iOS_Mobile_Lesson
-//
-//  Created by Macbook Air on 1.05.2023.
-//
+
 
 import UIKit
 

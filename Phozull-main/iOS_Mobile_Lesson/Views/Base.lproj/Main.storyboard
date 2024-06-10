@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -19,68 +21,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Adresiniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="raD-HO-Lc1">
-                                <rect key="frame" x="16" y="299" width="361" height="34"/>
+                                <rect key="frame" x="16" y="333" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifreniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tI6-dE-Cba">
-                                <rect key="frame" x="16" y="354" width="361" height="34"/>
+                                <rect key="frame" x="16" y="388" width="361" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beni hatırla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DK-4d-lev">
-                                <rect key="frame" x="62" y="419" width="325" height="22"/>
+                                <rect key="frame" x="62" y="453" width="325" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXE-7B-fa3">
-                                <rect key="frame" x="16" y="484" width="176" height="35"/>
+                                <rect key="frame" x="16" y="518" width="176" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="176" id="Ms2-DH-GYS"/>
                                 </constraints>
-                                <color key="tintColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Üye Ol">
-                                    <color key="baseForegroundColor" red="0.94901973009999996" green="0.94901973009999996" blue="0.94901973009999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" systemColor="viewFlipsideBackgroundColor"/>
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXy-7p-f68">
-                                <rect key="frame" x="201" y="484" width="176" height="35"/>
-                                <color key="tintColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="201" y="518" width="176" height="35"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Giriş Yap"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Giriş Yap">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phozull" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3f-AQ-qfg">
-                                <rect key="frame" x="16" y="140" width="289" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="fexwer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3f-AQ-qfg">
+                                <rect key="frame" x="16" y="223" width="289" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="ejb-oc-EQB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="35"/>
-                                <color key="textColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omA-h4-Eui">
-                                <rect key="frame" x="34" y="419" width="20" height="22"/>
+                                <rect key="frame" x="34" y="453" width="20" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="RwO-Qs-PT9"/>
                                     <constraint firstAttribute="height" constant="22" id="nlc-x5-b8F"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=" "/>
                                 <connections>
                                     <action selector="rememberMeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lx4-eN-ljg"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="2Vd-Pi-5d7">
-                                <rect key="frame" x="0.0" y="46" width="393" height="58"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tray.and.arrow.down.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Vd-Pi-5d7">
+                                <rect key="frame" x="134" y="72" width="126" height="143.00000000000063"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="1Qe-JK-naa"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aXE-7B-fa3" secondAttribute="bottom" constant="299" id="0ke-UA-c8U"/>
                             <constraint firstItem="raD-HO-Lc1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3BR-0B-eBM"/>
@@ -127,11 +137,11 @@
             <objects>
                 <viewController id="pHc-lg-Ngc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LoM-1p-1XM">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-2h-o0o">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="724"/>
+                                <rect key="frame" x="0.0" y="-59" width="393" height="901"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ksn-G4-741">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
@@ -140,7 +150,7 @@
                                                 <rect key="frame" x="22" y="24" width="320" height="62"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                <color key="textColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="AccentColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJF-cA-zSt">
@@ -155,7 +165,7 @@
                                                 <rect key="frame" x="22" y="498" width="320" height="62"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                <color key="textColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" name="AccentColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCR-ro-MeW">
@@ -206,13 +216,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEy-Xc-NeU">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="886"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfF-ky-wSc">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e1B-6A-7ew">
-                                                <rect key="frame" x="16" y="210" width="361" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e1B-6A-7ew">
+                                                <rect key="frame" x="16" y="313" width="361" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -220,8 +230,8 @@
                                                     <outlet property="delegate" destination="mvg-1Y-yXd" id="XOC-kp-3E1"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RCY-rQ-UYf">
-                                                <rect key="frame" x="16" y="267" width="361" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RCY-rQ-UYf">
+                                                <rect key="frame" x="16" y="367" width="361" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -229,8 +239,8 @@
                                                     <outlet property="delegate" destination="mvg-1Y-yXd" id="byK-ki-e1x"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tMJ-i3-oEU">
-                                                <rect key="frame" x="16" y="326" width="361" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tMJ-i3-oEU">
+                                                <rect key="frame" x="16" y="423" width="361" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
@@ -238,8 +248,9 @@
                                                     <outlet property="delegate" destination="mvg-1Y-yXd" id="mH6-Cj-tdw"/>
                                                 </connections>
                                             </textField>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="f3S-o0-9OZ">
-                                                <rect key="frame" x="239" y="390" width="138" height="38"/>
+                                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="f3S-o0-9OZ">
+                                                <rect key="frame" x="228" y="498" width="138" height="38"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="138" id="UNa-CL-1xR"/>
                                                 </constraints>
@@ -247,62 +258,48 @@
                                                     <action selector="dateChanged:" destination="mvg-1Y-yXd" eventType="valueChanged" id="0kn-Eu-FNU"/>
                                                 </connections>
                                             </datePicker>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doğum Tarihinizi seçiniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSi-w6-nra">
-                                                <rect key="frame" x="16" y="396" width="204" height="32"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Doğum Tarihinizi seçiniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSi-w6-nra">
+                                                <rect key="frame" x="16" y="501" width="204" height="32"/>
+                                                <color key="tintColor" name="AccentColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="RHi-g6-rVE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" name="AccentColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7i6-ee-dTq">
-                                                <rect key="frame" x="16" y="473" width="361" height="72"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7i6-ee-dTq">
+                                                <rect key="frame" x="16" y="574" width="361" height="72"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Uygulamaya üye olarak">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" metaFont="system" size="18"/>
                                                             <font key="NSOriginalFont" metaFont="system" size="18"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment content=" ">
+                                                    <fragment content=" Gizlilik Sözleşmesini ">
                                                         <attributes>
+                                                            <color key="NSColor" red="0.93958147917597246" green="0.96983832120895386" blue="0.16535370614022715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                         </attributes>
                                                     </fragment>
-                                                    <fragment content="Gizlilik Sözleşmesini">
+                                                    <fragment content="ve ">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" ">
-                                                        <attributes>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="ve">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" ">
-                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment content="Kullanım Koşullarını ">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.93958147917597246" green="0.96983832120895386" blue="0.16535370614022715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment content="onaylamış olursunuz">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
                                                         </attributes>
                                                     </fragment>
@@ -310,24 +307,31 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWS-YO-RqJ">
-                                                <rect key="frame" x="79" y="567" width="234" height="35"/>
+                                                <rect key="frame" x="79" y="689" width="234" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="tintColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <color key="tintColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Üyeliği Tamamla"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Üyeliği Tamamla">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="completeSigningUpBtn:" destination="mvg-1Y-yXd" eventType="touchUpInside" id="9iI-va-uiU"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addPhotoImage" translatesAutoresizingMaskIntoConstraints="NO" id="TWb-dO-sOZ">
-                                                <rect key="frame" x="112.66666666666669" y="8" width="168" height="171"/>
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="addPhotoImage" translatesAutoresizingMaskIntoConstraints="NO" id="TWb-dO-sOZ">
+                                                <rect key="frame" x="112" y="107" width="168" height="171"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="AccentColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="171" id="JLW-4K-CWN"/>
                                                     <constraint firstAttribute="width" constant="168" id="nAg-HX-TN4"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstItem="sSi-w6-nra" firstAttribute="top" secondItem="tMJ-i3-oEU" secondAttribute="bottom" constant="36" id="0FB-Xj-JZ6"/>
                                             <constraint firstItem="tMJ-i3-oEU" firstAttribute="top" secondItem="RCY-rQ-UYf" secondAttribute="bottom" constant="25" id="15N-Db-iaX"/>
@@ -398,6 +402,7 @@
                                 <rect key="frame" x="0.0" y="160" width="393" height="598"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="phozullCell" rowHeight="490" id="7Xc-4j-IeY" customClass="PhozullTVC" customModule="iOS_Mobile_Lesson" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="490"/>
@@ -420,14 +425,14 @@
                                                 </label>
                                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kuk-so-Zbn">
                                                     <rect key="frame" x="9" y="371" width="30" height="28"/>
-                                                    <color key="tintColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="AccentColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="41I-AB-DxI"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Tvg-wu-6Pp">
                                                     <rect key="frame" x="51" y="371" width="30" height="28"/>
-                                                    <color key="tintColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" name="AccentColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="7s9-d9-PHe"/>
                                                         <constraint firstAttribute="height" constant="28.666666666666686" id="aom-to-VJv"/>
@@ -510,16 +515,17 @@
                                     <outlet property="delegate" destination="4J5-3m-jn5" id="k4l-rU-HgQ"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="phozull" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuS-gQ-Fch">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="fexwer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuS-gQ-Fch">
                                 <rect key="frame" x="16" y="59" width="178" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                <color key="textColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mmw-DE-q9v"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="C0y-xK-NVo"/>
                     <connections>
@@ -540,7 +546,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="H46-Ck-tGK">
-                                <rect key="frame" x="0.0" y="103" width="393" height="656"/>
+                                <rect key="frame" x="0.0" y="44" width="393" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="commentCell" rowHeight="87" id="x6h-Wm-3EC" customClass="CommentTVC" customModule="iOS_Mobile_Lesson" customModuleProvider="target">
@@ -586,7 +592,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iw5-Dd-F4R">
-                                <rect key="frame" x="0.0" y="759" width="393" height="93"/>
+                                <rect key="frame" x="0.0" y="793" width="393" height="93"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Yorumunuz" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="601-9j-iUL">
                                         <rect key="frame" x="25" y="15" width="238" height="48"/>
@@ -659,6 +665,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="ebz-Li-5PQ" kind="relationship" relationship="viewControllers" id="iGa-JQ-hOV"/>
@@ -680,8 +687,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SoO-VD-omt">
                                 <rect key="frame" x="16" y="86" width="361" height="242"/>
+                                <color key="tintColor" name="AccentColor"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Yorum yazın ..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PIy-IT-ViD">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Yorumunuzu yazın.." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PIy-IT-ViD">
                                 <rect key="frame" x="16" y="355" width="361" height="143"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -689,20 +697,24 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gj-OG-Nyf">
-                                <rect key="frame" x="16" y="523" width="361" height="39"/>
+                                <rect key="frame" x="16" y="557" width="361" height="39"/>
+                                <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="CtT-Wo-6Hf"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="tintColor"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Phozull'u Paylaş"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Fex'i Paylaş">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="sharePhozullClicked:" destination="wAg-Q2-fxL" eventType="touchUpInside" id="BZT-pJ-HQU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ULo-TA-ty9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor"/>
                         <constraints>
                             <constraint firstItem="PIy-IT-ViD" firstAttribute="leading" secondItem="3Gj-OG-Nyf" secondAttribute="leading" id="4Bm-9K-b0U"/>
                             <constraint firstItem="SoO-VD-omt" firstAttribute="trailing" secondItem="PIy-IT-ViD" secondAttribute="trailing" id="7Se-s0-Iqr"/>
@@ -717,7 +729,7 @@
                             <constraint firstItem="SoO-VD-omt" firstAttribute="leading" secondItem="PIy-IT-ViD" secondAttribute="leading" id="tJ3-Vj-Dvp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="addPhozull" id="xkf-aK-H59"/>
+                    <tabBarItem key="tabBarItem" title="" image="tray.and.arrow.down.fill" catalog="system" id="xkf-aK-H59"/>
                     <connections>
                         <outlet property="phozulCommentArea" destination="PIy-IT-ViD" id="VMv-Wr-hgE"/>
                         <outlet property="phozullImage" destination="SoO-VD-omt" id="BnC-1p-CfZ"/>
@@ -736,43 +748,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="50B-nv-TV5">
-                                <rect key="frame" x="16" y="105" width="97" height="93.666666666666671"/>
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="50B-nv-TV5">
+                                <rect key="frame" x="16" y="46.000000000000007" width="97" height="93.666666666666686"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <imageReference key="image" image="person.crop.circle.dashed" catalog="system" symbolScale="default"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="IZd-wv-Rum">
-                                <rect key="frame" x="88" y="105" width="25" height="23.999999999999986"/>
+                                <rect key="frame" x="88" y="46" width="25" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25.333333333333314" id="3eY-ZZ-Lfg"/>
                                     <constraint firstAttribute="width" constant="25" id="ppp-Md-t4b"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CU-gO-CZ4">
-                                <rect key="frame" x="16" y="266" width="361" height="69"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="fsP-Eb-fXk"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="phozull">
-                                        <attributes>
-                                            <color key="NSColor" red="0.26716241239999999" green="0.4484946132" blue="0.76763653759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="32" name="Futura-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="'larım">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="21" name="Futura-Medium"/>
-                                            <font key="NSOriginalFont" size="21" name="Futura-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SE-km-y4D">
-                                <rect key="frame" x="146" y="114" width="208" height="38"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SE-km-y4D">
+                                <rect key="frame" x="121" y="102" width="208" height="38"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="MWe-O6-26i"/>
                                 </constraints>
@@ -780,19 +771,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew4-Nv-w14">
-                                <rect key="frame" x="146" y="160" width="208" height="31"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew4-Nv-w14">
+                                <rect key="frame" x="121" y="54" width="208" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="aEC-pA-YYy"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <color key="textColor" red="0.94086775209999995" green="1" blue="0.95994959310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XQk-Tu-yFA">
-                                <rect key="frame" x="16" y="343" width="361" height="426"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XQk-Tu-yFA">
+                                <rect key="frame" x="16" y="387" width="361" height="403"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" name="AccentColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kyp-4M-ojv">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -828,9 +821,69 @@
                                     <outlet property="delegate" destination="zVE-9H-x5r" id="qr5-EP-b5b"/>
                                 </connections>
                             </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yeni kullanıcı adı:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TNc-Lg-m0b">
+                                <rect key="frame" x="16" y="198" width="193" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yeni isim" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x06-B5-tkw">
+                                <rect key="frame" x="16" y="240" width="193" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CU-gO-CZ4">
+                                <rect key="frame" x="16" y="310" width="361" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="fsP-Eb-fXk"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="fex">
+                                        <attributes>
+                                            <color key="NSColor" red="0.91167980970132756" green="0.93741633735521879" blue="0.34833508345719794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="41" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="'l">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="21" name="Futura-Medium"/>
+                                            <font key="NSOriginalFont" size="21" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="ediklerim">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="21" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2z-Tm-JCr">
+                                <rect key="frame" x="251" y="221" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Güncelle">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="zVE-9H-x5r" eventType="touchUpInside" id="gxl-QE-ryl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l26-ka-Xae"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0CU-gO-CZ4" firstAttribute="trailing" secondItem="ALT-i3-UoM" secondAttribute="trailingMargin" id="5Na-6L-AUx"/>
                             <constraint firstItem="6SE-km-y4D" firstAttribute="trailing" secondItem="ew4-Nv-w14" secondAttribute="trailing" id="8gz-Lg-f6q"/>
@@ -856,9 +909,12 @@
                     <navigationItem key="navigationItem" id="7Cl-4c-JPx"/>
                     <connections>
                         <outlet property="myPhozullsCollectionView" destination="XQk-Tu-yFA" id="nlC-JX-gyv"/>
-                        <outlet property="nameAndSurnameLabel" destination="6SE-km-y4D" id="xbb-oY-ndv"/>
+                        <outlet property="nameAndSurnameLabel" destination="6SE-km-y4D" id="LN3-IY-V0L"/>
+                        <outlet property="nameTextField" destination="x06-B5-tkw" id="zcE-Jf-52u"/>
                         <outlet property="profileImage" destination="50B-nv-TV5" id="zll-cJ-Qdl"/>
-                        <outlet property="usernameLabel" destination="ew4-Nv-w14" id="h7x-MJ-aoZ"/>
+                        <outlet property="saveButton" destination="o2z-Tm-JCr" id="XCe-4B-VfQ"/>
+                        <outlet property="usernameLabel" destination="ew4-Nv-w14" id="GRP-oP-W2t"/>
+                        <outlet property="usernameTextField" destination="TNc-Lg-m0b" id="CAt-ve-6ZX"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="profileVCtoLogin" modalPresentationStyle="fullScreen" id="Jzb-Sd-TcY"/>
                     </connections>
                 </viewController>
@@ -873,7 +929,7 @@
                     <tabBarItem key="tabBarItem" title="Profil" image="person.circle" catalog="system" id="lD5-Ey-iSs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aP4-Y7-hUW">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -892,7 +948,7 @@
                     <tabBarItem key="tabBarItem" title="Akış" image="house" catalog="system" id="2Lf-hL-mCL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WN0-jM-5xq">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -911,23 +967,25 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="addPhotoImage" width="99" height="96"/>
-        <image name="addPhozull" width="50" height="50"/>
-        <image name="header" width="214" height="59"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="message" catalog="system" width="128" height="116"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.crop.circle.dashed" catalog="system" width="128" height="123"/>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
+        <image name="tray.and.arrow.down.fill" catalog="system" width="128" height="117"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
